@@ -3,56 +3,277 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AICM.com</title>
+    <title>AICM</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="AICMlogo1.jpg" type="image/x-icon" />
   </head>
   <body>
-    <!-----------------------------nav start--------------------->
-    <nav>
-      <a href="#" class="a"> <img src="aicmlogo.svg" /></a>
-      <div class="mid">
-        <a class="create" href="#">Create a store</a>
-        <a class="about" href="#">About</a>
-        <a class="knowledge" href="#"
-          >KnowledgeBase
-          <i class="fa-solid fa-angle-down"></i>
-        </a>
-      </div>
+    <!-- header start -->
 
-      <button>Visit store</button>
-    </nav>
-
-    <!------------------------------nav end--------------------->
-
-    <!-----------------header start----------->
     <header>
-      <div class="header-left">
-        <p class="p1">
-          The Smarter,<br />AI-Powered <br />Decentralized <br />Marketplace
-        </p>
-        <p class="p2">
-          Harness the power of decentralized AI <br />
-          marketplace with AICM.
-        </p>
-      </div>
+      <a href="/">
+        <img
+          class="header-logo"
+          src="https://aicm.store/static/media/logo.f2eb6ec924733791bff83bc0cacb947a.svg"
+          alt="AICM logo"
+        />
+      </a>
+
+      <nav>
+        <a href="#">Create a store</a>
+        <a href="#">About</a>
+        <a href="#" class="knowledge-base-link">
+          KnowledgeBase
+          <i class="fa-solid fa-angle-down"></i>
+          <div class="knowledge-base-container">
+            <a href="#">Create a store</a>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+          </div>
+        </a>
+      </nav>
+
+      <a href="#" class="visit-store">Visit store</a>
     </header>
-    <!-----------------header end--------------------------->
 
-    <!-----------------------main start-->
-
+    <video
+      class="hero-bg-video"
+      src="https://aicm.store/static/media/Headervideo.f31b35a8331a4491b12b.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <!-- hero section -->
     <main>
-      <button>
-        <i class="fa-solid fa-magnifying-glass"></i>Search with AICM
-      </button>
+      <h1>
+        The Smarter, <br />
+        AI-Powered <br />
+        Decentralized <br />
+        Marketplace
+      </h1>
+      <p>
+        Harness the power of Decentralized AI <br />
+        Marketplace with AICM
+      </p>
+      <div class="search-container">
+        <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search with AICM" />
+        </div>
+      </div>
     </main>
-    <!----------------main end------------->
+
+    <!-- category section -->
+    <section class="category-section">
+      <h2>Categories</h2>
+      <p>
+        Redefining e-commerce with AI and blockchain. Buy, sell, and list
+        physical <br />
+        products, digital goods, and specialized services seamlessly on AICM.
+      </p>
+
+      <div class="categories-container">
+        <div class="category-card1">
+          <video
+            src="https://aicm.store/static/media/cardvideo3.49ae60448d7c0aec2779.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <p>Physical Goods</p>
+          <a href="#">Explore now</a>
+        </div>
+        <div class="category-card2">
+          <video
+            src="https://aicm.store/static/media/cardvideo2.9be2d42e7cd327fd10a8.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <p>Services</p>
+          <a href="#">Explore now</a>
+        </div>
+        <div class="category-card3">
+          <video
+            src="https://aicm.store/static/media/cardvideo1.b78645fda63acc4bf351.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+          <p>Digital Goods</p>
+          <a href="#">Explore now</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="h1">
+      <h1>Listed Projects</h1>
+    </div>
+
+    <section class="container">
+      <div class="animate-container">
+        <div class="child">
+          <img
+            src="data:image/png;base64,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"
+          />
+          <h4>Social</h4>
+          <h2>Amazon</h2>
+        </div>
+        <div class="child">
+          <img
+            src="https://aicm.store/static/media/nifinity.530938d960a577e6635dd937d0cc2d03.svg"
+          />
+          <h4>Social</h4>
+          <h2>NFINITY</h2>
+        </div>
+        <div class="child">
+          <img
+            src="https://aicm.store/static/media/tg.ac102a1f2fbfe96e42c46f6f6ea4693c.svg"
+          />
+          <h4>Social</h4>
+          <h2>Telegram</h2>
+        </div>
+        <!-- <div class="child">
+          <img
+            src="https://aicm.store/static/media/topup.a1d2983bc2c904f491df.png"
+          />
+        </div> -->
+      </div>
+      <div class="btns">
+        <button class="left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button class="right">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </section>
+    <section class="middle">
+      <div class="middle-head">
+        <div class="video">
+          <video
+            src="https://aicm.store/static/media/Headervideo.f31b35a8331a4491b12b.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+        <h2>What is AICM?</h2>
+        <p>
+          AICM is an AI-powered marketplace for physical goods, digital<br />
+          products, and services. Built on blockchain, we provide secure, <br />
+          transparent, and scalable trading solutions, connecting crypto
+          <br />communities and revolutionizing global e-commerce.
+        </p>
+        <a href="#"><button>Whitepaper</button></a>
+      </div>
+    </section>
+    <!--solid proof section start-->
+    <section>
+      <div class="solid-proof">
+        <div class="spleft">
+          <h1>AICM Audits</h1>
+          <p>
+            AICM has successfully completed the KYC & Audit<br />
+            with SolidProof.io. This ensures that AICM operates<br />transparently,
+            adheres to regulatory requirements,<br />
+            and fosters a safe environment for the users.
+          </p>
+        </div>
+        <div class="spright">
+          <img
+            src="https://aicm.store/static/media/solidproof.6e1d681277d907473b1ed41eb158c9cd.svg"
+            alt="solid-proof image"
+            class="img1"
+          />
+          <img
+            src="https://aicm.store/static/media/tier.198aae95bd62ba5c218f.png"
+            class="img2"
+          />
+        </div>
+      </div>
+    </section>
+    <!--section tocken-utility start-->
+    <section>
+      <div class="tocken-utility">
+        <div class="tu-left">
+          <button>
+            0x8790...08a7E47
+            <img
+              src="https://aicm.store/static/media/Copy.8818b9e23b6906df128f0fa80a5a11d1.svg"
+            />
+          </button>
+          <h1>Token Utility</h1>
+          <p>
+            Discover how the $AICM token powers transactions,<br />
+            rewards, and exclusive features across our marketplace.
+          </p>
+          <div class="parent">
+            <div class="child">
+              <img
+                src="https://aicm.store/static/media/Affiliate.f23fe62e72a60f7808d5ae4a32fea307.svg"
+              />
+              <h4>Affiliate Program</h4>
+            </div>
+            <div class="child">
+              <img
+                src="https://aicm.store/static/media/Staking.c2ec1abee302ca331d606612a600b531.svg"
+              />
+              <h4>Staking</h4>
+            </div>
+            <div class="child">
+              <img
+                src="https://aicm.store/static/media/Revenue.2165af81c41112d7f259d87a7cc60594.svg"
+              />
+              <h4>Revenue Sharing</h4>
+            </div>
+            <div class="child">
+              <img
+                src="https://aicm.store/static/media/Platform.631e09fe070db77a1d2906bc098205bf.svg"
+              />
+              <h4>Platform Payment</h4>
+            </div>
+            <div class="child">
+              <img
+                src="https://aicm.store/static/media/Backs.c734933d5725ef534678457d45829710.svg"
+              />
+              <h4>Buy Backs</h4>
+            </div>
+            <div class="child">
+              <img
+                src="https://aicm.store/static/media/Ads.c12582c8331860126cbb9e7e7d875873.svg"
+              />
+              <h4>Sponsored Ads</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="tu-right">
+          <img
+            src="https://aicm.store/static/media/aicmcoin.3a52cc64868773ed5972.png"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- section tocken-utility end-->
+    <!---------RoadMap section start-->
+    <div class="roadmap">
+      <h1>Roadmap</h1>
+      <p>
+        Explore our vision for the future, from launching innovative
+        <br />features to expanding our marketplace globally.
+      </p>
+
+      <div class="buttons">
+        <button class="btn1">Developers</button>
+        <button class="btn2">Users</button>
+        <button class="btn3">Community</button>
+      </div>
+    </div>
+    <!-- RoadMap section end-->
   </body>
 </html>
